@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".administrador.NuevoRepartidor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20dp"
+                android:background="#04135E"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="99dp"
+                    android:layout_height="113dp"
+                    app:srcCompat="@drawable/cilindro" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="DistriGAS"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                app:srcCompat="@drawable/nuevousuario" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Registro de Usuario"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNombresRepartidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:ems="10"
+                android:hint="Nombres Completos"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtApellidosRepartidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:ems="10"
+                android:hint="Apellidos Completos"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtCedulaRepartidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:ems="10"
+                android:hint="Cédula de identidad o RUC"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtDireccionRepartidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:ems="10"
+                android:hint="Dirección del Repartidor"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtTelefonoRepartidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:ems="10"
+                android:hint="Celular del Repartidor"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/txtEmailRepartidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:ems="10"
+                android:hint="Email del Repartidor"
+                android:inputType="textEmailAddress" />
+
+            <Spinner
+                android:id="@+id/spinnerRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="10dp"
+                android:entries="@array/roles_array" />
+
+            <EditText
+                android:id="@+id/txtClaveRepartidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:ems="10"
+                android:hint="Clave de seguridad"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnRegistrarRepartidor"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@android:color/holo_orange_dark"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:text="Registrarse" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
